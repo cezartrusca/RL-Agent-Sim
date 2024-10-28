@@ -3,10 +3,14 @@
 
 ![image](src/eddie.png)
 
+__What is it?__
+This is a simulation of a creature whose goal is to pick up the blue 'fruit' and deliver it to the green-colored goal marker. The agent is rewarded for actions such as picking up the object and walking over to the goal with it.
+
+__How does it work?__
+The script saves the agent's progress every 10 episodes to *agent.sav*. Each episode has a total of 200 steps.
+When loading the script a second time, it will attempt to load a brain from *agent.sav* if it exists.
+
 __Prerequisites:__
 - Numpy
 - PyGame
 - Pickle
-
-The script saves the agent's progress every 10 episodes to *agent.sav*. Each episode has a total of 200 steps.
-When loading the script a second time, it will attempt to load a brain from *agent.sav* if it exists.
