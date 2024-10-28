@@ -98,13 +98,13 @@ class Environment:
         if not self.has_ball:
             if self.agent_pos == self.ball_pos:
                 self.has_ball = True
-                reward += 50  # Reward for picking up ball
+                reward += 75  # Reward for picking up ball
         
         # Check if agent with ball is in target zone
         if self.has_ball:
             if (self.target_zone[0] <= self.agent_pos[0] <= self.target_zone[0] + self.target_zone[2] and
                 self.target_zone[1] <= self.agent_pos[1] <= self.target_zone[1] + self.target_zone[3]):
-                reward += 100  # Reward for delivering ball
+                reward += 150  # Reward for delivering ball
                 done = True
         
         return self._get_state(), reward, done
@@ -220,7 +220,7 @@ def train():
             state = next_state
             
             env.render(episode, total_reward, max_steps)
-            pygame.time.wait(50)  # Slow down visualization
+            pygame.time.wait(30)  # Slow down visualization
             
             if done:
                 break
