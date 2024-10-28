@@ -7,3 +7,5 @@ __Prerequisites:__
 - Numpy
 - PyGame
 - Pickle
+
+The script saves the agent's progress every 10 episodes to *agent.sav*. Each episode has a total of 200 steps.
