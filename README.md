@@ -1,4 +1,4 @@
 # RL Agent Sim
  Reinforcement learning simulator in Python
 
-[image](eddie.png)
+[image](src/eddie.png)
