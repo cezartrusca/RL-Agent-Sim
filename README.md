@@ -9,3 +9,4 @@ __Prerequisites:__
 - Pickle
 
 The script saves the agent's progress every 10 episodes to *agent.sav*. Each episode has a total of 200 steps.
+When loading the script a second time, it will attempt to load a brain from *agent.sav* if it exists.
